@@ -1,16 +1,18 @@
-﻿# website-upload-20260602-121726-015
+# 经典剧集大全 静态电影网站
 
-Batch 15 of 38. Contains extracted static website versions. The original zip files are not committed.
+本包已生成完整纯静态站点，首页入口为 `index.html`。
 
-| Directory | Source zip |
-| --- | --- |
-| version-141 | project-bolt-sb1-36ukxiwy - 副本-chatgpt (1).zip |
-| version-142 | project-bolt-sb1-36ukxiwy-chatgpt (1) (moved 1).zip |
-| version-143 | project-bolt-sb1-36ukxiwy-chatgpt (1).zip |
-| version-144 | project-bolt-sb1-37nyeejg - 副本-chatgpt (1) (moved 1).zip |
-| version-145 | project-bolt-sb1-37nyeejg - 副本-chatgpt (1) (moved 2).zip |
-| version-146 | project-bolt-sb1-37nyeejg - 副本-chatgpt (1).zip |
-| version-147 | project-bolt-sb1-37nyeejg-chatgpt (1) (moved 1).zip |
-| version-148 | project-bolt-sb1-37nyeejg-chatgpt (1).zip |
-| version-149 | project-bolt-sb1-3anksma6 - 副本-chatgpt (1).zip |
-| version-150 | project-bolt-sb1-3anksma6-chatgpt (1) (moved 1).zip |
+- 实际解析影片数量：2000
+- 独立详情页数量：2000
+- 分类页数量：12
+- 首页、分类页、排行榜页、搜索页和详情页均已插入统计脚本
+- 播放器使用本地 HLS 初始化脚本，并绑定从原 JS 素材提取的 m3u8 播放源
+- 页面图片按要求引用网站顶级目录 `1.jpg` 到 `150.jpg`
+
+建议通过静态服务器预览，例如在本目录执行：
+
+```bash
+python3 -m http.server 8080
+```
+
+然后访问 `http://localhost:8080/`。
